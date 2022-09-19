@@ -92,11 +92,38 @@
 #     print(pizza)
 
 # 4-12
-my_foods = ['pizza', 'falafel', 'carrot cake']
-friends_foods = my_foods[:]
-friends_foods.append('ice cream')
-for food in my_foods:
+# my_foods = ['pizza', 'falafel', 'carrot cake']
+# friends_foods = my_foods[:]
+# friends_foods.append('ice cream')
+# for food in my_foods:
+#     print(food)
+# print(f"my friends favourite foods are:")
+# for food in friends_foods:
+#     print(food)
+
+# Tuples
+# dimensions = (200,50)
+# print(dimensions[0])
+# print(dimensions[1])
+# Tuple can be defined without brackets. Comma defines tupple
+# dimensions = 200,500
+# print(dimensions[0])
+
+
+# Overwriting tuple
+# dimensions = (200,50)
+# for dimension in dimensions:
+#     print(dimension)
+#
+# dimensions = (400,100)
+# for dimension in dimensions:
+#     print(dimension)
+
+# 4-13
+foods = ('steak', 'sandwich', 'rice', 'soup', 'desert')
+for food in foods:
     print(food)
-print(f"my friends favourite foods are:")
-for food in friends_foods:
+# foods[1] = 'pie'
+foods = ('pie', 'hot dog', 'rice', 'soup', 'desert')
+for food in foods:
     print(food)
