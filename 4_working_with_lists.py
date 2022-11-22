@@ -123,7 +123,7 @@
 foods = ('steak', 'sandwich', 'rice', 'soup', 'desert')
 for food in foods:
     print(food)
-# foods[1] = 'pie'
-foods = ('pie', 'hot dog', 'rice', 'soup', 'desert')
-for food in foods:
-    print(food)
+# foods[1] = 'pie' # Cannot change tupple!
+# foods = ('pie', 'hot dog', 'rice', 'soup', 'desert')
+# for food in foods:
+#     print(food)
