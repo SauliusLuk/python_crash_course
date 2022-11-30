@@ -16,8 +16,8 @@ current_users = ['admin', 'sl', 'vj', 'dl', 'bf']
 new_users = ['Admin', 'SL', 'gg', 'de', 'vf']
 
 
-for username in usernames:
-    if username == 'admin':
-        print('Hello admin, would you like to see a status report?')
-    else:
-        print(f'Hello, {username}')
+# for username in usernames:
+#     if username == 'admin':
+#         print('Hello admin, would you like to see a status report?')
+#     else:
+#         print(f'Hello, {username}')
