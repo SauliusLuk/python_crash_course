@@ -12,12 +12,12 @@ that the username is available.
 current_users containing the lowercase versions of all existing users."""
 
 current_users = ['admin', 'sl', 'vj', 'dl', 'bf']
+new_users = ['Admin', 'sl', 'gg', 'de', 'vf']
 
-new_users = ['Admin', 'SL', 'gg', 'de', 'vf']
+current_users_lower = [current_user.lower() for current_user in current_users]
 
-
-# for username in usernames:
-#     if username == 'admin':
-#         print('Hello admin, would you like to see a status report?')
-#     else:
-#         print(f'Hello, {username}')
+for new_user in new_users:
+    if new_user.lower() in current_users_lower:
+        print(f'Sorry, username {new_user} already taken')
+    else:
+        print(f'Welcome, {new_user}')

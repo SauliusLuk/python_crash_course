@@ -1,0 +1,22 @@
+from restaurant import Restaurant
+
+class IceCreamStand(Restaurant):
+    def __init__(self, name, cuisine ='ice_cream'):
+        super().__init__(name, cuisine)
+        self.flavours = []
+
+
+    def show_flavours(self):
+        print(f"{self.name} sells the following flavours")
+        for flavour in self.flavours:
+            print(f"- {flavour}")
+
+
+shop = IceCreamStand('Ice Ice Baby')
+shop.flavours = ['vanilla', 'chocolate', 'cherry']
+
+shop.describe_restaurant()
+shop.show_flavours()
+
+restaurant = Restaurant('Ziggy', 'British')
+restaurant.describe_restaurant()
