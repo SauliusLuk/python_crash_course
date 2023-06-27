@@ -1,17 +1,9 @@
-def count_words(filename):
-    """Count the approximate number of words in a file."""
+files = ['cats.txt', 'dogs.txt']
+
+for file in files:
     try:
-        with open(filename, encoding='utf-8') as f:
+        with open(file, encoding='utf-8') as f:
             contents = f.read()
+            print(f"Here's a content of the {file} file:\n{contents}")
     except FileNotFoundError:
-        # print(f"sorry, the file {filename} does not exist")
-        pass
-    else:
-        words = contents.split()
-        num_words = len(words)
-        print(f"the file {filename} has {num_words} words")
-
-
-filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt']
-for filename in filenames:
-    count_words(filename)
+        print(f"the file {file} not found")
