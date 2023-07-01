@@ -15,4 +15,4 @@ class CityTestCase(unittest.TestCase):
         self.assertEqual(formatted_city_country_pop, 'Kaunas, Lithuania, 400')
 
 if __name__ == '__main__':
-    unittest.main
+    unittest.main()
