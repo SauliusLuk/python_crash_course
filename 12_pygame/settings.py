@@ -4,3 +4,4 @@ class Settings:
         self.screen_width = 1200
         self.screen_height = 800
         self.bg_color = (66, 191, 245)
+        self.rocket_speed = 1.5
