@@ -30,10 +30,17 @@ class EmptyScreen:
             if event.type == pygame.QUIT:
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_RIGHT:
-                    print("Right arrow key press detected")
-                elif event.key == pygame.K_LEFT:
-                    print("Left arrow key press detected")
+                self._check_keydown_events(event)
+
+
+
+    def _check_keydown_events(self,event):
+        print(event.key)
+        if event.key == pygame.K_q:
+            sys.exit()
+
+
+
 
     def _blit_messages(self):
         message_right_rect = self.message_right.get_rect()

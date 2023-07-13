@@ -1,28 +1,33 @@
-class Car:
+class Restaurant:
 
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-        self.odometer_reading = 50
+    def __init__(self, name, cuisine):
+        self.name = name
+        self.cuisine = cuisine
+        self.numbers_served = 0
 
-    def get_descriptive_name(self):
-        long_name = f"{self.year} {self.make} {self.model}"
-        return long_name.title()
 
-    def read_odometer(self):
-        print(f"This car has {self.odometer_reading} miles on it")
+    def describe_restaurant(self):
+        print(f"The restaurant {self.name} serves {self.cuisine} cuisine")
 
-    def update_odometer(self, mileage):
-        if mileage >= self.odometer_reading:
-            self.odometer_reading = mileage
-        else:
-            print("You can't roll back an odometer!")
+    def open_restaurant(self):
+        print(f"The restaurant {self.name} is now open")
 
-my_new_car = Car('audi', 'a4', 1999)
+    def set_numbers_served(self):
+        print(f"{self.name} served {self.numbers_served} people tonight")
 
-print(my_new_car.get_descriptive_name())
+    def increment_numbers_served(self, numbers):
+        self.numbers_served += numbers
 
-my_new_car.update_odometer(23)
-my_new_car.read_odometer()
 
+
+
+
+
+restraurant = Restaurant('Dera', "African")
+
+restraurant.describe_restaurant()
+restraurant.open_restaurant()
+restraurant.numbers_served = 9
+restraurant.set_numbers_served()
+restraurant.increment_numbers_served(9)
+restraurant.set_numbers_served()
